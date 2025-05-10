@@ -4,7 +4,7 @@ FROM ubuntu@sha256:3afff29dffbc200d202546dc6c4f614edc3b109691e7ab4aa23d02b42ba86
 
 # Update the package database and install required tools
 RUN apt-get update
-RUN apt-get install -y python3.12 python3-pip pipx git less vim sudo cmake make g++-14 clangd-19 libjemalloc-dev
+RUN apt-get install -y python3.12 python3-pip pipx git less vim sudo cmake make g++-14 clangd-19 libjemalloc-dev wget
 
 # Update clangd and g++ versions to the latest ones
 RUN ln -s  /usr/bin/clangd-19 /usr/bin/clangd
